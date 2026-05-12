@@ -1,5 +1,12 @@
 {
 	"name": "Python 3",
 	"image": "mcr.microsoft.com/devcontainers/python:1-alpine",
-	"postAttachCommand": "printf '\\n\\033[1;36m========================================\\nHELLO FROM THE DEVCONTAINER FILE!\\n========================================\\033[0m\\n'"
+	"postAttachCommand": "printf '\\n\\033[1;36m========================================\\nHELLO FROM THE DEVCONTAINER FILE!\\n========================================\\033[0m\\n'",
+
+    "customizations": {
+	    "vscode": {
+	      "extensions": [
+			"kuba-p.theme-pink-candy"]
+	    }
+	  }
 }
