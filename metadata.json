@@ -11,9 +11,11 @@
     ],
     "duration": 3,
     "prerequisites": [
-        "software-engineering-devcontainer-file",
         "atomic-learning-codespaces",
-        "vs-code-terminal"
+        "vs-code-terminal",
+        "programming-paths",
+        "vs-code-extensions",
+        "software-engineering-devcontainer-file"
     ],
     "related": [
     ]

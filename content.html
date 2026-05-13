@@ -1,11 +1,20 @@
 <p>A <code>devcontainer</code> file can be used to configure a GitHub Codespace. By placing the file in the <code>.devcontainer</code> directory of your repository, it will automatically be used to define the environment in the Codespace as it is built.</p>
 
-<p>This behaviour can be very helpful as it ensures anyone who creates a codespace from your repository will have a consistent development environment in terms of installed tools and VS Code extensions. This can be useful for collaborative software development and creating resources for teaching.</p>
+<p>This behaviour can be very helpful as it ensures anyone who creates a Codespace from your repository will have a consistent development environment in terms of installed tools and VS Code extensions. This can be useful for collaborative software development and creating resources for teaching.</p>
 
 <h2>Mini-Example</h2>
 
-<p>Click on the button at the top of the page to create a Codespace from this page's repository. As the Codespace is being created from the <code>devcontainer</code> file, you should see a message in the terminal saying hello from the devcontainer file. You should also see the colour of the interface change as the colour of the interface change as a cosmetic VS Code extension is installed. You may need to wait a few seconds for each of these effects to occur.</p>
+<p>Click on the button at the top of the page to create a Codespace from this page's repository. This Codespace has been configured with a <code>devcontainer</code> file to show a few of the possible effects. You may have to wait several seconds for each step to occur. Verify by observing the following:</p>
 
-<p>Finally, try running the command <code class="language-bash">python --version</code> in the terminal. You should see this runs without errors, as Python is included in the image selected.</p>
-
-<p>In the Codespace, note the location of the <code>.devcontainer/devcontainer</code> file. You don't need to worry just yet about its contents.</p>
+<ol>
+    <li>As the Codespace is loading, watch the build progress. You should see the selected image downloading and extracting. This may take 30 seconds-1 minute.</li>
+    <li>A message saying "HELLO FROM THE DEVCONTAINER FILE!" should appear in the terminal a few seconds later. This demonstrates how a devcontainer can be configured to run terminal commands.</li>
+    <li>The file <code>resources/example_file.md</code> should automatically open in the editor.</li>
+    <li>The extension <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank">Code Spell Checker</a> should be installed.
+    <ul>
+        <li>You should see a misspelled word highlighted in the file.</li>
+        <li>Open the extension tab and see it is installed.</li>
+    </ul></li>
+    <li>A Python interpreter was included in the image used. Type the command <code class="language-bash">python --version</code> in the terminal - you should see the version of Python installed repeated back to you.</li>
+    <li>Locate and open the <code>.devcontainer/devcontainer.json</code> file. You are not expected to understand the contents, but should observe its placement in the file structure.</li>
+</ol>

@@ -1,7 +1,7 @@
 {
 	"name": "Example devcontainer file",
 	"image": "mcr.microsoft.com/devcontainers/python:3",
-	"postAttachCommand": "printf '\\n\\033[1;36m========================================\\nHELLO FROM THE DEVCONTAINER FILE!\\n========================================\\033[0m\\n'; code example_file.md",
+	"postAttachCommand": "printf '\\n\\033[1;36m========================================\\nHELLO FROM THE DEVCONTAINER FILE!\\n========================================\\033[0m\\n'; code resources/example_file.md",
 
     "customizations": {
 	    "vscode": {
