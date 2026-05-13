@@ -9,7 +9,7 @@
         "codespace",
         "software-engineering"
     ],
-    "duration": 3,
+    "duration": 5,
     "prerequisites": [
         "atomic-learning-codespaces",
         "vs-code-terminal",
